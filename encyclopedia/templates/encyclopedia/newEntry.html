@@ -1,0 +1,39 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+New Entry
+{% endblock %}
+
+{% block body %}
+
+<h2>Create New Page: </h2>
+
+<form class="editEntry" action="{% url 'encyclopedia:newEntry' %}" method="POST">
+    {% csrf_token %}
+    <div class='formElement'>
+        <label for="{{ form.title.id_for_label }}">Title:</label>
+        {{form.title}}
+    </div>
+    {% for error in form.title.errors %}
+    <p>{{error}}</p>
+    {% endfor %}
+    <div class='body'>
+        {{form.body}}
+    </div>
+    <input id = 'editSubmit' name='submit' type='submit' required>
+    </div>
+    
+</form>
+
+
+
+<!-- <form class="editEntry" action="{% url 'encyclopedia:newEntry' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        <label for="editTitle">Title:</label>
+        <input id = 'editTitle' name = 'title' type = 'text' required>
+    </div>
+    <textarea name='body'></textarea>
+    <input id = 'editSubmit' name='submit' type='submit' required>
+</form> -->
+{% endblock %}

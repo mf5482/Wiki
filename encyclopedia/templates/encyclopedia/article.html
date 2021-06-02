@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+    {% block title %}
+    {{title}}
+    {% endblock %}
+
+    {% block body %}
+        {% if text != None %}
+            <a href="{% url 'encyclopedia:editEntry' title %}" class='edit'>Edit page</a>
+            {{text | safe}}
+        {% else %}
+            Error: Page does not exist.
+        {% endif %}
+    {% endblock %}
