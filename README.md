@@ -1,2 +1,5 @@
 # Wiki
-Uses Python/Django to create a Wikipedia-style web application
+
+A wikipedia-style web application where users can view, add, or edit articles.
+
+Technologies Used: Python, Django, HTML, CSS, Markdown
