@@ -9,7 +9,8 @@ Home Screen: Click on an article.
 <img width="1438" alt="Screen Shot 2021-06-04 at 11 16 37 AM" src="https://user-images.githubusercontent.com/79879438/120824800-c9342900-c526-11eb-91b1-4c9fb0d24d6b.png">
 <p>&nbsp;</p>
 
-Side Bar: Search for an article, create a new article, or go to a random page. <p>&nbsp;</p>
+Side Bar: Search for an article, create a new article, or go to a random page.
+
 <img width="229" alt="Screen Shot 2021-06-04 at 11 20 30 AM" src="https://user-images.githubusercontent.com/79879438/120824911-e0731680-c526-11eb-9a7c-ed4097acb7c0.png">
 <p>&nbsp;</p>
 
